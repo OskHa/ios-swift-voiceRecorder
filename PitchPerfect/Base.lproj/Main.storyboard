@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Hello world!-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,6 +56,12 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yoq-nu-6rO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0T-i3-6np">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.43324960605400809" green="0.81038062907319786" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -76,6 +82,8 @@
                             <constraint firstAttribute="centerX" secondItem="KOQ-Y8-Vl5" secondAttribute="centerX" constant="-0.5" id="dmV-ac-zpa"/>
                             <constraint firstItem="tWX-rZ-sZH" firstAttribute="top" secondItem="WFv-8G-37s" secondAttribute="bottom" constant="96" id="jDS-fM-1Gc"/>
                             <constraint firstAttribute="centerX" secondItem="WFv-8G-37s" secondAttribute="centerX" id="kCO-9R-8dT"/>
+                            <constraint firstAttribute="centerX" secondItem="z0T-i3-6np" secondAttribute="centerX" id="md0-VG-3Hm"/>
+                            <constraint firstItem="z0T-i3-6np" firstAttribute="top" secondItem="WFv-8G-37s" secondAttribute="bottom" constant="27" id="p3x-tz-GIa"/>
                             <constraint firstAttribute="width" secondItem="WFv-8G-37s" secondAttribute="height" multiplier="1:1" id="utR-E4-yqZ"/>
                             <constraint firstItem="tWX-rZ-sZH" firstAttribute="top" secondItem="WFv-8G-37s" secondAttribute="bottom" constant="96" id="wFg-EU-qVQ"/>
                         </constraints>
@@ -84,8 +92,18 @@
                                 <exclude reference="KOQ-Y8-Vl5"/>
                                 <exclude reference="tWX-rZ-sZH"/>
                                 <exclude reference="WFv-8G-37s"/>
+                                <exclude reference="z0T-i3-6np"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0iG-vV-4oB"/>
+                                <exclude reference="SBQ-Fx-EKd"/>
+                                <exclude reference="Uyp-Su-VKe"/>
+                                <exclude reference="VYt-C4-AP7"/>
+                                <exclude reference="ZJG-d1-peH"/>
+                                <exclude reference="kCO-9R-8dT"/>
+                                <exclude reference="utR-E4-yqZ"/>
+                                <exclude reference="md0-VG-3Hm"/>
+                                <exclude reference="p3x-tz-GIa"/>
                                 <exclude reference="0GO-w5-gwO"/>
                                 <exclude reference="Hn7-xK-5zS"/>
                                 <exclude reference="LhK-vw-8uU"/>
@@ -94,13 +112,6 @@
                                 <exclude reference="bKH-80-iiE"/>
                                 <exclude reference="cIQ-h1-WYh"/>
                                 <exclude reference="dmV-ac-zpa"/>
-                                <exclude reference="0iG-vV-4oB"/>
-                                <exclude reference="SBQ-Fx-EKd"/>
-                                <exclude reference="Uyp-Su-VKe"/>
-                                <exclude reference="VYt-C4-AP7"/>
-                                <exclude reference="ZJG-d1-peH"/>
-                                <exclude reference="kCO-9R-8dT"/>
-                                <exclude reference="utR-E4-yqZ"/>
                                 <exclude reference="Eua-TL-BF1"/>
                                 <exclude reference="Ga7-n2-044"/>
                                 <exclude reference="jDS-fM-1Gc"/>
@@ -112,8 +123,18 @@
                                 <include reference="KOQ-Y8-Vl5"/>
                                 <include reference="tWX-rZ-sZH"/>
                                 <include reference="WFv-8G-37s"/>
+                                <include reference="z0T-i3-6np"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="0iG-vV-4oB"/>
+                                <exclude reference="SBQ-Fx-EKd"/>
+                                <include reference="Uyp-Su-VKe"/>
+                                <include reference="VYt-C4-AP7"/>
+                                <exclude reference="ZJG-d1-peH"/>
+                                <exclude reference="kCO-9R-8dT"/>
+                                <exclude reference="utR-E4-yqZ"/>
+                                <include reference="md0-VG-3Hm"/>
+                                <include reference="p3x-tz-GIa"/>
                                 <include reference="0GO-w5-gwO"/>
                                 <exclude reference="Hn7-xK-5zS"/>
                                 <exclude reference="LhK-vw-8uU"/>
@@ -122,13 +143,6 @@
                                 <exclude reference="bKH-80-iiE"/>
                                 <exclude reference="cIQ-h1-WYh"/>
                                 <exclude reference="dmV-ac-zpa"/>
-                                <exclude reference="0iG-vV-4oB"/>
-                                <exclude reference="SBQ-Fx-EKd"/>
-                                <include reference="Uyp-Su-VKe"/>
-                                <include reference="VYt-C4-AP7"/>
-                                <exclude reference="ZJG-d1-peH"/>
-                                <exclude reference="kCO-9R-8dT"/>
-                                <exclude reference="utR-E4-yqZ"/>
                                 <exclude reference="Eua-TL-BF1"/>
                                 <include reference="Ga7-n2-044"/>
                                 <exclude reference="jDS-fM-1Gc"/>
@@ -136,7 +150,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Hello world!" id="shk-oq-ozK"/>
+                    <navigationItem key="navigationItem" id="shk-oq-ozK"/>
                     <connections>
                         <outlet property="recodInProgress" destination="KOQ-Y8-Vl5" id="iAW-5v-UUc"/>
                         <outlet property="recordAudioButton" destination="WFv-8G-37s" id="dXq-2p-tbD"/>
@@ -207,7 +221,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.27510724068415254" green="0.57854810243179444" blue="0.75840435606060608" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745098039218" green="0.7686274509803922" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ir3-gi-jnZ" firstAttribute="top" secondItem="Knd-Xe-hoA" secondAttribute="bottom" constant="38" id="2pX-dc-H44"/>
                             <constraint firstItem="Knd-Xe-hoA" firstAttribute="top" secondItem="Cff-4W-YvM" secondAttribute="bottom" constant="48" id="9RD-wP-8nA"/>
